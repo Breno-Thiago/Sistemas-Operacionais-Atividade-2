@@ -1,0 +1,28 @@
+EXERCICIO 3 - COMPARACAO DE DESEMPENHO
+Data e horario da execucao: 10/05/2026 12:00:19
+
+1 THREAD - ArrayList original x ThreadSafeArrayList
+Lista A = ArrayList original | Lista B = ThreadSafeArrayList
+Operacao      Tamanho    Lista A(ms)    Lista A(op/s)    Lista B(ms)    Lista B(op/s)
+Insercao         1000          0.218          4578838          0.865          1155600
+Busca            1000          3.762           265790          2.611           382957
+Remocao          1000          2.618           382019          1.168           856278
+Insercao         5000          0.302         16572095          0.390         12816668
+Busca            5000          4.960          1008062          5.210           959712
+Remocao          5000          7.873           635113          3.558          1405243
+Insercao        10000          0.623         16043381          0.602         16600789
+Busca           10000         21.000           476196         21.894           456749
+Remocao         10000         13.575           736644         13.472           742280
+
+16 THREADS - Vector x ThreadSafeArrayList
+Lista A = Vector | Lista B = ThreadSafeArrayList
+Operacao      Tamanho    Lista A(ms)    Lista A(op/s)    Lista B(ms)    Lista B(op/s)
+Insercao         1000          6.924          2310723          4.321          3703100
+Busca            1000         15.038          1063992          8.836          1810727
+Remocao          1000         42.105           380006         46.255           345907
+Insercao         5000          3.185          5022980          2.581          6199522
+Busca            5000         20.197           792203         18.528           863549
+Remocao          5000         49.378           324030         46.262           345857
+Insercao        10000          3.493          4580771          2.493          6417530
+Busca           10000         39.698           403042         21.600           740732
+Remocao         10000         64.868           246655         55.555           288005
